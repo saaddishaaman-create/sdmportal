@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UEE Mock Examination</title>
+
+<link rel="stylesheet" href="exam.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header">
+
+<div>
+
+<h1>University Entrance Examination</h1>
+
+<p>English Mock Examination</p>
+
+</div>
+
+<div class="timer">
+
+⏱ <span id="timer">02:00:00</span>
+
+</div>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="container">
+
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2>Exam Summary</h2>
+
+<p><b>Answered:</b> <span id="answered">0</span></p>
+
+<p><b>Remaining:</b> <span id="remaining">100</span></p>
+
+<p><b>Flagged:</b> <span id="flagged">0</span></p>
+
+<hr style="margin:20px 0;">
+
+<h2>Questions</h2>
+
+<div id="questionNumbers" class="question-grid">
+
+<!-- Question buttons created by JavaScript -->
+
+</div>
+
+</div>
+
+
+<!-- QUESTION PANEL -->
+
+<div class="question-panel">
+    <!-- QUESTION HEADER -->
+
+<div class="question-header">
+
+<h2 id="questionNumber">
+Question 1 of 100
+</h2>
+
+<button class="flag-btn" onclick="toggleFlag()">
+🚩 Flag
+</button>
+
+</div>
+
+
+<!-- QUESTION -->
+
+<div class="question-box">
+
+<div class="question" id="questionText">
+
+Question will appear here...
+
+</div>
+
+</div>
+
+
+<!-- OPTIONS -->
+
+<label class="option">
+
+<input type="radio" name="answer" value="0">
+
+<span id="option0">Option A</span>
+
+</label>
+
+
+<label class="option">
+
+<input type="radio" name="answer" value="1">
+
+<span id="option1">Option B</span>
+
+</label>
+
+
+<label class="option">
+
+<input type="radio" name="answer" value="2">
+
+<span id="option2">Option C</span>
+
+</label>
+
+
+<label class="option">
+
+<input type="radio" name="answer" value="3">
+
+<span id="option3">Option D</span>
+
+</label>
+
+
+<!-- NAVIGATION -->
+
+<div class="navigation">
+
+<button class="prev-btn" onclick="previousQuestion()">
+⬅ Previous
+</button>
+
+<div>
+
+<button class="finish-btn" id="finishBtn" onclick="finishExam()">
+Finish Exam
+</button>
+
+<button class="next-btn" id="nextBtn" onclick="nextQuestion()">
+Next ➜
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="questions.js"></script>
+
+<script src="exam.js"></script>
+
+</body>
+<body>
+
+<div class="header">
+    ...
+</div>
+
+<button id="toggleNav" onclick="toggleSidebar()">
+☰ Hide Navigation
+</button>
+
+<div class="container">
+</html>

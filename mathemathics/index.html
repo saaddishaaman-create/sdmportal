@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sadem UEE Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-box{
+    width:360px;
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#1b4f9c;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#1976d2;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1259a7;
+}
+
+.footer{
+    margin-top:25px;
+    font-size:13px;
+    color:#666;
+}
+
+.footer b{
+    color:#1b4f9c;
+}
+</style>
+
+</head>
+
+<body>
+<div class="login-box">
+
+    <img src="images/logo.jpg" class="logo" alt="MOE Logo">
+
+    <h2>Sadem UEE Portal</h2>
+
+   <input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Log In</button>
+
+    <div class="footer">
+        <p>Ministry of Education Ethiopia</p>
+        <b>Developed by Sadem Jemal Kaso</b>
+    </div>
+
+</div>
+
+</div>
+<script>
+function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (username === "sadem" && password === "40712972") {
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Invalid Username or Password!");
+    }
+}
+</script>
+</body>
+</html>
